@@ -1,3 +1,7 @@
+-- init.lua of the module-dir/ loaded
+-- if we have both module-dir/init.lua and module-dir.lua, the later it's only called
+require("module-dir")
+
 local other_module = require "other_module"
 
 print('from init.lua', local_var_to_file)
@@ -30,9 +34,6 @@ stack traceback:
 other_module.fn_added_to_M()
 
 other_module.local_fn_added_to_M()
-
-require('pkg')
-require('pkg.pkg')
 
 -- Lua 5.4.7  Copyright (C) 1994-2024 Lua.org, PUC-Rio
 -- > false and true or nil
