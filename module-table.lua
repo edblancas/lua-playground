@@ -1,0 +1,5 @@
+return {
+  {
+    'owner/repo'
+  }
+}
